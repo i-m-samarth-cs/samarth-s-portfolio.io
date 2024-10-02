@@ -1904,3 +1904,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.skills-item {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-logo {
+  max-width: 100%; /* Ensures logos don’t exceed container width */
+  height: auto;
+}
+
+/* Responsive for desktop */
+@media (min-width: 1024px) {
+  .skill-logo {
+    width: 100px; /* Adjust the logo size for desktop */
+  }
+}
+
+/* Responsive for tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .skill-logo {
+    width: 80px; /* Adjust the logo size for tablet */
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 767px) {
+  .skill-logo {
+    width: 60px; /* Adjust the logo size for mobile */
+  }
+}
