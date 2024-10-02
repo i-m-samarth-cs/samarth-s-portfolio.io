@@ -1,44 +1,43 @@
-# vCard - Personal portfolio
+# Samarth Shendre's Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Welcome to my portfolio! Explore my journey in the field of Computer Science, AI, ML, Web Development, and more.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## About Me
+I'm **Samarth Shendre**, a passionate Computer Engineering student at Sinhgad College of Engineering. I have experience in Machine Learning, Web Development, and working with technologies like **Generative AI**, **NVIDIA Inference Microservices (NIM)**, and **Web 3.0**. My portfolio showcases projects, skills, and experiences in these fields.
 
-## Demo
+## Projects
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+### 1. **Smart Gas Detection and Fire Prevention System**
+- **Description**: A smart IoT system designed to detect gas leaks and prevent fire hazards in domestic and industrial settings. It integrates real-time monitoring through Blynk IoT.
+- **Technologies**: IoT, Blynk, Sensors
 
-## Prerequisites
+### 2. **NIM-Powered Real-Time Predictive Maintenance for Smart Factories**
+- **Description**: A predictive maintenance system for smart factories leveraging NVIDIA Inference Microservices (NIM) to detect equipment anomalies and optimize maintenance schedules.
+- **Technologies**: Generative AI, NIM, Python
 
-Before you begin, ensure you have met the following requirements:
+### 3. **Attendance System Using Face Recognition**
+- **Description**: A facial recognition system that automates attendance for educational institutions using machine learning algorithms.
+- **Technologies**: OpenCV, Python, ML
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## Skills
+- **Programming Languages**: Python, JavaScript, HTML, CSS
+- **Machine Learning**: TensorFlow, Keras, scikit-learn
+- **Web Development**: HTML, CSS, JavaScript, React
+- **Tools**: Git, GitHub, VSCode
+- **AI/ML Libraries**: PyTorch, TensorFlow
 
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Achievements
+- **1st Place** in Techfusion Inter-College Project Competition 2023.
+- **3rd Prize** at the University level in Srujan 2k24 for an interview with Capgemini's VP.
+- **Contributor** in GirlScript Summer of Code Extended Version 2024.
 
 ## Contact
+- **Portfolio**: [samarth-s-portfolio.io](https://i-m-samarth-cs.github.io/samarth-s-portfolio.io/)
+- **LinkedIn**: [linkedin.com/in/samarthshendre](https://linkedin.com/in/samarthshendre)
+- **GitHub**: [github.com/i-m-samarth-cs](https://github.com/i-m-samarth-cs)
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Feel free to explore my projects and reach out if you'd like to collaborate!
 
-## License
+---
 
-MIT
+⭐ **Star this repository** if you find my work interesting!
