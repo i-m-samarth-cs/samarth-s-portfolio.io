@@ -9,7 +9,7 @@ I'm **Samarth Shendre**, a passionate Computer Engineering student at Sinhgad Co
 
 ### 1. **Smart Gas Detection and Fire Prevention System**
 - **Description**: A smart IoT system designed to detect gas leaks and prevent fire hazards in domestic and industrial settings. It integrates real-time monitoring through Blynk IoT.
-- **Technologies**: IoT, Blynk, Sensors
+- **Technologies**: IoT, Blynk, Sensors, Arduino
 
 ### 2. **NIM-Powered Real-Time Predictive Maintenance for Smart Factories**
 - **Description**: A predictive maintenance system for smart factories leveraging NVIDIA Inference Microservices (NIM) to detect equipment anomalies and optimize maintenance schedules.
