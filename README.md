@@ -1,44 +1,31 @@
-# vCard - Personal portfolio
+# 🌐 Samarth Shendre's Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Welcome to my personal portfolio! 🚀  
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
-## Demo
+## 🛠️ About  
+This portfolio showcases my projects, skills, and achievements in the field of AI/ML, Blockchain, and Software Development. It serves as a gateway to explore my journey, contributions, and technical expertise.  
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## 🚀 Features  
+- 🔹 Overview of my skills and experience  
+- 🔹 Showcasing major projects and achievements  
+- 🔹 Contact information and social links  
 
-## Prerequisites
+## 🏆 Highlights  
+- 🎖️ AI/ML Lead at E-Cell SCOE  
+- 🏆 Winner of multiple project competitions  
+- 💡 Contributor at GirlScript Summer of Code Extended Version 2024  
+- 📌 Working on AI-powered solutions for real-world problems  
 
-Before you begin, ensure you have met the following requirements:
+## 📌 Technologies Used  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend & ML:** Python, Flask, TensorFlow, OpenCV  
+- **Databases:** MySQL, Firebase  
+- **Other Tools:** GitHub, Docker, NVIDIA NIM  
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## 📬 Contact  
+- 📧 Email: sh28samarth@gmail.com  
+- 💼 LinkedIn: [Samarth Shendre](https://www.linkedin.com/in/samarth-shendre/)  
+- 🐙 GitHub: [i-m-samarth-cs](https://github.com/i-m-samarth-cs)  
 
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+Feel free to check out my portfolio and connect with me! 🚀  
