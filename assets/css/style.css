@@ -1942,3 +1942,200 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 60px; /* Adjust the logo size for mobile */
   }
 }
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 15px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.title-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 217, 255, 0.2);
+}
+
+.skill-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.title-wrapper h5 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.skills-item {
+  list-style: none;
+}
+
+.title-wrapper {
+  background: rgba(255,255,255,0.04);
+  border-radius: 15px;
+  padding: 15px 10px;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.title-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.title-wrapper h5 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .skill-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-wrapper h5 {
+    font-size: 13px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .title-wrapper {
+    padding: 12px 8px;
+  }
+}
+.timeline {
+  position: relative;
+}
+
+/* Main flight path */
+.career-flight {
+  position: absolute;
+  left: 18px;
+  top: 90px;
+  width: 3px;
+  height: 80%;
+  background: linear-gradient(
+    to bottom,
+    #ffd54f,
+    #ff9800
+  );
+  border-radius: 20px;
+}
+
+/* Plane */
+.career-plane {
+  position: absolute;
+  left: -12px;
+  top: 0;
+  font-size: 26px;
+  transform: rotate(90deg);
+  filter: drop-shadow(0 0 8px #ffd54f);
+  animation: flyCareer 12s infinite alternate ease-in-out;
+}
+
+/* Experience Cards */
+.timeline-item {
+  margin-left: 40px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 213, 79, 0.08);
+  transform: translateX(10px);
+}
+
+.timeline-item::before {
+  content: "📍";
+  position: absolute;
+  left: -35px;
+  top: 12px;
+  font-size: 16px;
+}
+
+@keyframes flyCareer {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: calc(100% - 40px);
+  }
+}
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 32px;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #f5c542, #d89b00);
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(245, 197, 66, 0.25);
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(245, 197, 66, 0.45);
+}
+
+.resume-btn:active {
+  transform: scale(0.98);
+}

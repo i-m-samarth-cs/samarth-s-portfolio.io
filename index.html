@@ -24,7 +24,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".about-text div");
 
+  boxes.forEach((box, index) => {
+    box.style.opacity = "0";
+    box.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      box.style.transition = "all 0.6s ease";
+      box.style.opacity = "1";
+      box.style.transform = "translateY(0)";
+    }, index * 200);
+  });
+});
+</script>
 <body>
 
   <!--
@@ -214,30 +229,103 @@
         </header>
 
         <section class="about-text">
-          <p>
-            🎯🌟Software and Full Stack Web Developer <br>
-            👨‍💻Tech Enthusiast <br>
-            🌟Passionate Learner <br>
-              Enthusiastic about staying updated with the latest industry trends and continuously enhancing my skills.
-              <br>
-             I'm Developer and Cyber-Security Analyst from Pune, India working in IT sector.
-             I enjoy
-             turning complex problems into simple, beautiful and intuitive designs.
-          </p>
 
-          <p>
-            🎓 Education <br>
-Pursuing Bachelor of Engineering at Sinhgad College of Engineering (SCOE) Pune and also i have completed my diploma in Computer Engineering from SMDR Government Polytechnic Dhule. Passed my SSC from Chavara High School Dhule.
-<br><br>
-During my diploma journey i have gained a lot of technical knowledge and have built a strong technical foundation of 
-computer engineering aspects like Programming languages, Data Structure, Database Management and also I have
-learnt certain concepts about Software Engineering, Operating System, Microprocessor and also concepts about Web Development 
-and Networking etc
-<br><br>
-Also, I have participated in different curricular as well as non-curricular activities and also have worked as team member and 
- worked as team leader. Also been Anchor for different college events and participated in different project competition
-          </p>
-        </section>
+  <h3 style="
+    color:#00d9ff;
+    margin-bottom:15px;
+    font-size:24px;
+    font-weight:700;
+    border-left:4px solid #00d9ff;
+    padding-left:12px;">
+    👋 About Me
+  </h3>
+
+  <p style="line-height:1.9; font-size:15px;">
+
+    <span style="display:inline-block;background:#00d9ff20;color:#00d9ff;
+    padding:4px 12px;border-radius:20px;margin:3px;">
+      💻 Full Stack Developer
+    </span>
+
+    <span style="display:inline-block;background:#00ff8820;color:#00ff88;
+    padding:4px 12px;border-radius:20px;margin:3px;">
+      🔐 Cybersecurity Analyst
+    </span>
+
+    <span style="display:inline-block;background:#ffb30020;color:#ffb300;
+    padding:4px 12px;border-radius:20px;margin:3px;">
+      🚀 Tech Enthusiast
+    </span>
+
+    <span style="display:inline-block;background:#ff4d4d20;color:#ff4d4d;
+    padding:4px 12px;border-radius:20px;margin:3px;">
+      🌟 Lifelong Learner
+    </span>
+
+  </p>
+
+  <p style="margin-top:15px; line-height:1.8;">
+    I'm a passionate developer from <strong>Pune, India 🇮🇳</strong> who enjoys
+    building innovative web applications, exploring cybersecurity, and solving
+    real-world problems through technology. I love transforming complex ideas
+    into clean, efficient, and user-friendly digital solutions.
+  </p>
+
+  <div style="
+      margin:20px 0;
+      padding:15px;
+      border-left:4px solid #00d9ff;
+      background:rgba(0,217,255,0.08);
+      border-radius:10px;">
+
+    <strong style="color:#00d9ff;">🎓 Education</strong><br><br>
+
+    • B.E. Computer Engineering — Sinhgad College of Engineering, Pune<br>
+    • Diploma in Computer Engineering — SMDR Government Polytechnic, Dhule<br>
+    • SSC — Chavara High School, Dhule
+
+  </div>
+
+  <div style="
+      margin:20px 0;
+      padding:15px;
+      border-left:4px solid #00ff88;
+      background:rgba(0,255,136,0.08);
+      border-radius:10px;">
+
+    <strong style="color:#00ff88;">🛠 Core Skills</strong><br><br>
+
+    C • C++ • Java • Python • HTML • CSS • JavaScript • PHP • MySQL •
+    Data Structures • DBMS • Networking • Cybersecurity • Web Development
+
+  </div>
+
+  <div style="
+      margin:20px 0;
+      padding:15px;
+      border-left:4px solid #ffb300;
+      background:rgba(255,179,0,0.08);
+      border-radius:10px;">
+
+    <strong style="color:#ffb300;">🏆 Highlights</strong><br><br>
+
+    🥇 Winner – AI Agon 2K24<br>
+    🏆 Winner – HackOdisha 5.0 (Verbwire Track)<br>
+    🤖 AI/ML Lead – E-Cell SCOE<br>
+    🎓 Campus Ambassador – E-Cell IIT Bombay<br>
+    💻 Contributor – GirlScript Summer of Code 2024
+
+  </div>
+
+  <p style="
+      text-align:center;
+      margin-top:20px;
+      font-weight:600;
+      color:#00d9ff;">
+      "Code. Learn. Innovate. Repeat." 🚀
+  </p>
+
+</section>
 
 
         <!--
@@ -331,41 +419,49 @@ Also, I have participated in different curricular as well as non-curricular acti
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+  <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-8.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
+    <figure class="testimonials-avatar-box">
+      <img src="./assets/images/avatar-8.jpg" alt="AI-Agon Healthcare Winner" width="60" data-testimonials-avatar>
+    </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Winner Nation Hackathon - Bits Goa</h4>
+    <h4 class="h4 testimonials-item-title" data-testimonials-title>
+      Winner – AI-Agon Healthcare Domain
+    </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Top 3 Open Source Projects at the LLM and RAG Hackathon hosted at BITS Goa, conducted by Pathway AI!
-                  </p>
-                </div>
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        🥇 Secured <strong>1st Prize</strong> in the <strong>AI-Agon Healthcare Domain</strong>
+        at Sinhgad TechTonic 2025, a national-level tech fest. Recognized for developing
+        an innovative AI-powered solution addressing real-world healthcare challenges.
+      </p>
+    </div>
 
-              </div>
-            </li>
+  </div>
+</li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+  <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-7.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
+    <figure class="testimonials-avatar-box">
+      <img src="./assets/images/avatar-7.png" alt="HackOdisha 5.0 Winner" width="60" data-testimonials-avatar>
+    </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Winner AI-Agon 2k25 - Health Care</h4>
+    <h4 class="h4 testimonials-item-title" data-testimonials-title>
+      Winner – HackOdisha 5.0
+    </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    🥇 in the AI Agon project competition in TechTonic 2k25 - SKin Scan
-                  </p>
-                </div>
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        🏆 Won the <strong>Verbwire Track Prize</strong> at <strong>HackOdisha 5.0</strong>,
+        a national-level hackathon held on 6th–7th September 2025. Recognized for
+        developing an innovative solution and demonstrating excellence in blockchain
+        and emerging technologies.
+      </p>
+    </div>
 
-              </div>
-            </li>
-
+  </div>
+</li>
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
@@ -538,6 +634,12 @@ Also, I have participated in different curricular as well as non-curricular acti
 
             <li class="clients-item">
               <a href="#">
+                <img src="./assets/images/logo-12-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
                 <img src="./assets/images/logo-1-color.png" alt="client logo">
               </a>
             </li>
@@ -633,17 +735,16 @@ Also, I have participated in different curricular as well as non-curricular acti
             <h3 class="h3">Education</h3>
           </div>
 
+          
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">BE Computer Engineering at SCOE Pune</h4>
 
-              <span>2023 — Present</span>
+              <span>2023 — 2026</span>
 
               <p class="timeline-text">
-                It's Samarth Shendre Student of Computer Engineering SCOE Pune diploma passed out from Government Polytechnic Dhule.
-                Tech Enthusiast with interest in  learning computer technology.
               </p>
 
             </li>
@@ -655,9 +756,6 @@ Also, I have participated in different curricular as well as non-curricular acti
               <span>2020 — 2023</span>
 
               <p class="timeline-text">
-                Activities and societies: Technical Team, Anchoring Team GPD, Development Team, Extra Curricular Activities Participation, 
-                Industrial Training at UPHCActivities and societies: Technical Team, Anchoring Team GPD, Development Team, Extra Curricular Activities Participation, Industrial Training at UPHC
-                Completed my 3 Years of Diploma Education in Computer Engineering from SMDR Government Polytechnic Dhule Securing an aggregate of 88.80 in 3rd Year, getting an best technological experience while pursuing education there
               </p>
 
             </li>
@@ -668,9 +766,7 @@ Also, I have participated in different curricular as well as non-curricular acti
 
               <span>2007 — 2020</span>
 
-              <p class="timeline-text">
-                Completed my SSC form Chavara High School Dhule by securing merit with percentage 93.40% 
-                spending my 13 years of education life in Chavara High School
+              <p class="timeline-text">                
               </p>
 
             </li>
@@ -686,106 +782,38 @@ Also, I have participated in different curricular as well as non-curricular acti
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Career Journey</h3>
           </div>
-
+<div class="career-flight">
+  <div class="career-plane">✈️</div>
+</div>
           <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cognizant Technology Solutions (CTS) - Program Analyst Trainee</h4>
+
+              <span>Jan 2026 - May 2026</span>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Coneixement India - Full Stack Developer Intern</h4>
 
-              <span>Jan 2025 - Present</span>
+              <span>Jan 2025 - March 2025</span>
 
               <p class="timeline-text">
                 
               </p>
 
             </li>
+           
+       
 
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Edunet - TechSaksham Internship</h4>
-
-              <span>Dec 2024 — Jan 2025</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Java Developer Intern at Oasis InfoByte</h4>
-
-              <span>Dec 2024 — Jan 2025</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI/ML Intern at Orinson Technologies</h4>
-
-              <span>Dec 2024 — Jan 2025</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI/ML Intern at Cognifyz</h4>
-
-              <span>Nov 2024 — Dec 24</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Contributor at GsSOC</h4>
-
-              <span>Oct 2024 — Nov 24</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI/ML Lead at E-Cell SCOE</h4>
-
-              <span>Sept 2024 — Present</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">CA at E-Cell IITB</h4>
-
-              <span>June 2024 — Dec 2024 </span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
+          
 
             <li class="timeline-item">
 
@@ -799,41 +827,7 @@ Also, I have participated in different curricular as well as non-curricular acti
 
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">GDSC Junior Team Member</h4>
-
-              <span>Oct 23 - Oct 24</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Technical Team Srujan 24</h4>
-
-              <span>2023 — Present</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer Internship at Codesoft</h4>
-
-              <span>Nov 23 — Dec 23</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
+           
 
             <li class="timeline-item">
 
@@ -906,14 +900,6 @@ Also, I have participated in different curricular as well as non-curricular acti
                 <span></span>
               </div>
             </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <img src="./assets/images/skill10.png" alt="Branding Logo" class="skill-logo">
-                <h5 class="h5">Cloud Computing - IBM, AWS, Azure</h5>
-                <span></span>
-              </div>
-            </li>
         
             <li class="skills-item">
               <div class="title-wrapper">
@@ -952,9 +938,13 @@ Also, I have participated in different curricular as well as non-curricular acti
         </section>
         
           <br>
-          <a href="https://drive.google.com/file/d/1SIw6tfHaMOZ-ssVgkLngCuoh2ZmB51E9/view?usp=drive_link" class="download-button">
-            Download Resume
-        </a>
+          <a href="https://drive.google.com/file/d/1oDRWYyBQjGE9fUS60_e7v5tM-LJ4r0rG/view?usp=sharing"
+   target="_blank"
+   class="resume-btn">
+   <span>📄</span>
+   <span>Download Resume</span>
+   <span>→</span>
+</a>
         
         </section>
         
@@ -1041,151 +1031,184 @@ Also, I have participated in different curricular as well as non-curricular acti
           </div>
 
           <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://github.com/i-m-samarth-cs/Cementra" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-25.png" alt="Cementra Live Demo" loading="lazy">
+    </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/i-m-samarth-cs/Mindful-Moment.git">
+    <h3 class="project-title">Cementra</h3>
+  </a>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://casper-proof-of-process-main-41vnh63zl.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-24.png" alt="Casper Proof Of Process Live Demo" loading="lazy">
+    </figure>
 
-                  <img src="./assets/images/project-22.png" alt="orizon" loading="lazy">
-                </figure>
+    <h3 class="project-title">Casper Proof Of Process</h3>
+  </a>
 
-                <h3 class="project-title">Mindful Moment</h3>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://github.com/i-m-samarth-cs/carbon-sathi" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-23.png" alt="Carbon Sathi Live Demo" loading="lazy">
+    </figure>
 
-                <p class="project-category">Web Development</p>
+    <h3 class="project-title">Carbon Sathi</h3>
+  </a>
 
-              </a>
-            </li>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/i-m-samarth-cs/Visual-Assistant---Google-Solutions-Team-Saksh">
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://build-gen-ai.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-22.png" alt="Build Gen AI Live Demo" loading="lazy">
+    </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    <h3 class="project-title">Build Gen AI</h3>
+  </a>
 
-                  <img src="./assets/images/project-21.png" alt="orizon" loading="lazy">
-                </figure>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="applications">
+  <a href="https://github.com/i-m-samarth-cs/mosdac-chatbot" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-21.png" alt="MOSDAC Chatbot Live Demo" loading="lazy">
+    </figure>
 
-                <h3 class="project-title">Visual Assistance - Application for Virtually Disabled People</h3>
+    <h3 class="project-title">MOSDAC Chatbot</h3>
+  </a>
 
-                <p class="project-category">Application</p>
+  <div class="project-meta-box">
+    <p class="project-category">Application</p>
+  </div>
+</li>
+<li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://steady-druid-f23473.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-20.png" alt="Baseline Copilot" loading="lazy">
+    </figure>
 
-              </a>
-            </li>
+    <h3 class="project-title">Baseline Copilot</h3>
+  </a>
 
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/Skin-Scan">
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://ricksha-pay-block-8txfbplhu-samarthscoe-gmailcoms-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-19.png" alt="Ricksha Pay Block Live Demo" loading="lazy">
+    </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    <h3 class="project-title">Ricksha Pay Block</h3>
+  </a>
 
-                  <img src="./assets/images/project-20.png" alt="orizon" loading="lazy">
-                </figure>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://api-wallet-agent.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-18.png" alt="API Wallet Agent Live Demo" loading="lazy">
+    </figure>
 
-                <h3 class="project-title">Skin Scan & ChiktsaMitra - Skin Cancer Detection Application</h3>
+    <h3 class="project-title">API Wallet Agent</h3>
+  </a>
 
-                <p class="project-category">ML Projects</p>
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://github.com/i-m-samarth-cs/ai_gymbuddy" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-17.png" alt="AI GymBuddy Live Demo" loading="lazy">
+    </figure>
 
-              </a>
-            </li>
+    <h3 class="project-title">AI GymBuddy</h3>
+  </a>
 
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/E-GSTify-">
+  <div class="project-meta-box">
+    <p class="project-category">Web Application</p>
+  </div>
+</li>
+            <li class="project-item active" data-filter-item data-category="applications">
+  <a href="https://github.com/i-m-samarth-cs/livsafe4" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-16.png" alt="LivSafe4 Live Demo" loading="lazy">
+    </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    <h3 class="project-title">LivSafe4</h3>
+  </a>
 
-                  <img src="./assets/images/project-19.webp" alt="orizon" loading="lazy">
-                </figure>
+  <div class="project-meta-box">
+    <p class="project-category">Application</p>
+  </div>
+</li>
 
-                <h3 class="project-title">E-GSTify - Automation of GST Invoicing</h3>
+<li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://i-m-samarth-cs.github.io/AgentNavigator/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-15.png" alt="AgentNavigator Live Demo" loading="lazy">
+    </figure>
 
-                <p class="project-category">ML Projects</p>
+    <h3 class="project-title">AgentNavigator</h3>
+  </a>
 
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/MediPredict---Medical-Diagnosis-System">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-18.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MediPredict - Implementation of AI Powered Medical Diagnosis</h3>
-
-                <p class="project-category">ML Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/SMS-Spam-Detection">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-17.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SMS Spam Shield</h3>
-
-                <p class="project-category">ML Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/Team-SAM---Health-Advisory-System">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-16.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Health Advisory System - National Hackthon</h3>
-
-                <p class="project-category">ML Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ml projects">
-              <a href="https://github.com/i-m-samarth-cs/NIMGuard---Predictive-Maintenance-for-Smart-Factories">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-15.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">NimGuard - Predictive Factory Maintenance</h3>
-
-                <p class="project-category">ML Projects</p>
-
-              </a>
-            </li>
-
+  <div class="project-meta-box">
+    <p class="project-category">Web Development</p>
+  </div>
+</li>
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://github.com/i-m-samarth-cs/EcoTrack---Amazon-Sambhav.git">
 
@@ -1463,186 +1486,2142 @@ Also, I have participated in different curricular as well as non-curricular acti
         <section class="blog-posts">
 
           <ul class="blog-posts-list">
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069144982037164101?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Cognizant internship completion certificate or corporate snapshot -->
+      <img src="./assets/images/blog-102.jpeg" alt="Cognizant Software Engineering Internship Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Internship</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Corporate Software Engineering Internship at Cognizant</h3>
+
+      <p class="blog-text">
+        💼 Successfully completed an intensive, full-time corporate engineering internship at Cognizant (Jan 31 – May 14, 2026). Gained invaluable enterprise-grade exposure, refined agile development skills, collaborated on production-ready workflows, and worked under elite technical mentorship to build scalable, industry-standard software solutions. #Cognizant #SoftwareEngineering #Internship #EnterpriseTech
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069142776135258488?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with a combined graphic of your Forage simulation completions -->
+      <img src="./assets/images/blog-101.jpeg" alt="Forage Job Simulations: Accenture, AWS, and Deloitte" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Enterprise Systems Engineering: Forage Professional Simulations</h3>
+
+      <p class="blog-text">
+        💼 Immersed deep into real-world corporate engineering pipelines through rigorous Forage job simulations. Completed specialized tracks including Software Engineering (Accenture), Cloud Solutions Architecture (AWS), Data Analytics (Deloitte), and Enterprise Infrastructure Cyber Security (Deloitte) to master the design of scalable, secure, and data-driven systems. #SoftwareEngineering #CloudArchitecture #CyberSecurity #DataAnalytics
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069139792563155326?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with an asset capturing one of your core build outputs like MediNotify or a multi-sprint collage -->
+      <img src="./assets/images/blog-100.jpeg" alt="Ecosystem Sprint Mastery: AI4Alzheimer's, SEED Hackathon, MyAnatomy, and LNMHacks" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Ecosystem Sprint: Full-Stack MERN, Clinical AI, &amp; Perimeter Security</h3>
+
+      <p class="blog-text">
+        🚀 Executed an extensive development run across multiple high-stakes engineering pipelines. Engineered MediNotify for AI4Alzheimer's computational healthcare research, tackled the Perimeter ZERO security track at SEED Hackathon, mastered comprehensive MERN-stack AI integration via MyAnatomy, and delivered production-ready features during an intense LNMHacks developer sprint. #FullStack #MERN #HealthTech #CyberSecurity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069137398794265016?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your ET-AI Hackathon Semi-Finalist badge or announcement graphic -->
+      <img src="./assets/images/blog-99.jpeg" alt="The Economic Times ET-AI Hackathon 2026 Semi-Finalist" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Semi-Finalist at The Economic Times ET-AI Hackathon 2026</h3>
+
+      <p class="blog-text">
+        🏆 Named a national Semi-Finalist at the prestigious ET-AI Hackathon 2026 hosted by The Economic Times! Earned high-level corporate and technical recognition for developing highly innovative, impact-driven AI system architectures designed to solve complex real-world operational challenges. #AI #SoftwareDeveloper #EconomicTimes
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069137082996637823?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Simplilearn SkillQuest assessment badge or certificate -->
+      <img src="./assets/images/blog-98.jpeg" alt="Simplilearn SkillQuest Generative AI Literacy Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Verified Generative AI Literacy via Simplilearn SkillQuest</h3>
+
+      <p class="blog-text">
+        🎓 Formally verified engineering fluency in next-generation architectures by successfully completing the SkillQuest Generative AI Literacy assessment via Simplilearn. Solidified foundational concepts in disruptive machine learning stacks, prompt engineering patterns, and responsible model deployment paradigms. #GenAI #TechAssessment
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069136260732801410?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your UXccelerate.ai Certificate of Excellence or EduShield UI mockup -->
+      <img src="./assets/images/blog-97.jpeg" alt="UXccelerate.ai VibeHack 2025 Certificate of Excellence for EduShield" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Certificate of Excellence for EduShield: UXccelerate.ai VibeHack</h3>
+
+      <p class="blog-text">
+        🧠 Honored with a Certificate of Excellence at the UXccelerate.ai VibeHack 2025! Developed EduShield—an empathetic AI companion engineered to support student well-being by harmonizing highly personalized interactive contexts with robust, privacy-first data architecture. #ProductDesign #AI #MentalWellBeing
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069135918112624844?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with an asset capturing your recent high-intensity build run -->
+      <img src="./assets/images/blog-96.jpeg" alt="AMD Slingshot, Half Baked and GHCI 25 Ecosystem Innovation" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Cross-Ecosystem Builds: From AMD Slingshot to Agentic AI</h3>
+
+      <p class="blog-text">
+        🚀 Accelerated rapid prototyping and system design by competing at AMD Slingshot, the Half Baked &amp; Bolt Founder Hackathon, and GHCI 25 GenAI tracks. Continuously pushed technical guardrails by implementing modern Agentic AI frameworks to orchestrate autonomous, self-correcting software agents. #DevCommunity #Coding #AgenticAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069135384861462854?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Wisdom Sprouts 30-day challenge certificate -->
+      <img src="./assets/images/blog-95.jpeg" alt="Wisdom Sprouts 30 Days Programming Challenge Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Coding</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed 30 Days Daily Programming Challenge</h3>
+
+      <p class="blog-text">
+        🔥 Hardened software logic and programmatic consistency by successfully completing the 30 Days Daily Programming Challenge hosted by Wisdom Sprouts IT Training Hub. Devoted an unbroken month to advanced algorithmic problem solving, core data structures exploration, and daily code optimization routines. #Coding #Logic #TechCommunity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069134985379070240?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your composite certifications or milestone badge -->
+      <img src="./assets/images/blog-94.jpeg" alt="Power Automate NASSCOM Yuva AI Tata Crucible" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Tri-Milestone: Automation, AI Foundations &amp; Corporate Strategy</h3>
+
+      <p class="blog-text">
+        ⚙️ Accelerated cross-functional expertise by acquiring certifications in Microsoft Power Automate workflow automation and the NASSCOM Yuva AI program. Simultaneously sharpened corporate strategic thinking through active competitive participation in the prestigious Tata Crucible Campus Quiz 2025. #PowerAutomate #AI #TataCrucible
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069132948012769306?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your NxtWave workshop completion asset -->
+      <img src="./assets/images/blog-93.jpeg" alt="NxtWave Generative AI Mastery Workshop" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed NxtWave Generative AI Mastery Workshop</h3>
+
+      <p class="blog-text">
+        🤖 Explored the future of intelligent application development by completing the Generative AI Mastery Workshop through the NxtWave community. Gained hands-on insights into leveraging Large Language Models (LLMs) and engineering cognitive API integrations to construct next-generation software architectures. #GenAI #LLM
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069132781423378559?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Contentstack TechSurf 2025 milestone certificate -->
+      <img src="./assets/images/blog-92.jpeg" alt="Contentstack TechSurf 2025 Mastery" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Mastered Headless CMS Workflows: Contentstack TechSurf</h3>
+
+      <p class="blog-text">
+        ⚡ Engineered agile, modern web experiences by mastering headless CMS workflows and structural content architecture at Contentstack TechSurf. Focused on API-first development paradigms to deploy highly decoupled, performant, and hyper-scalable digital content ecosystems. #Contentstack #SoftwareEngineer #HeadlessCMS
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069130360508793255?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Crio.Do completion certificate or badge -->
+      <img src="./assets/images/blog-91.jpeg" alt="Crio.Do Java and OOP Foundations Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Coding</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Mastered Java Programming &amp; OOP Foundations via Crio.Do</h3>
+
+      <p class="blog-text">
+        ☕ Completed rigorous practical foundations in Java Programming and Object-Oriented Programming (OOP) via Crio.Do. Mastered core architectural concepts including inheritance, polymorphism, encapsulation, and abstraction through real-world development scenarios, establishing a strong structural base for scalable backend engineering. #Java #Coding
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069129468841799851?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Rajasthan Royals Hackathon project chart or certificate -->
+      <img src="./assets/images/blog-90.jpeg" alt="SuperRR Selector Hackathon Rajasthan Royals" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Data Mining for Rajasthan Royals: SuperRR Selector Hackathon</h3>
+
+      <p class="blog-text">
+        🏏 Merged data science with sports strategy by participating in the SuperRR Selector Hackathon organized by the Rajasthan Royals. Built algorithmic player valuation models, executed advanced player analytics, and constructed tactical depth charts tailored for the IPL 2026 auction ecosystem using data mining techniques. #Analytics #DataMining #IPL2026
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2069123801980571884?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Simplilearn SkillUp certificates -->
+      <img src="./assets/images/blog-89.jpeg" alt="Simplilearn Kubernetes and CI/CD Certifications" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Kubernetes &amp; CI/CD DevOps Certifications</h3>
+
+      <p class="blog-text">
+        ☸️ Upgraded backend and cloud infrastructure capabilities by completing the "Introduction to Kubernetes" and "CI/CD for Beginners" specializations via Simplilearn SkillUp. Acquired actionable expertise in orchestration frameworks, container scheduling, declarative configurations, and automated deployment pipelines to engineer resilient, auto-scaling cloud architectures. #DevOps #Kubernetes
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068676079662027227?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your KnowledgeHut / upGrad Spring Boot certificate image -->
+      <img src="./assets/images/blog-88.jpeg" alt="Introduction to Spring Boot Course Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Introduction to Spring Boot – KnowledgeHut & upGrad</h3>
+
+      <p class="blog-text">
+        ☕ Successfully completed the "Introduction to Spring Boot" specialization by KnowledgeHut & upGrad. Mastered foundational enterprise backend architecture, including dependency injection (DI), Spring Bean lifecycles, structured REST API design, and modern server-side development practices to build high-throughput, maintainable software systems. #SpringBoot #Java
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068675682272764340?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your GDG Certificate or Solution Challenge graphic -->
+      <img src="./assets/images/blog-87.jpeg" alt="GDG on Campus Solution Challenge Certificate of Achievement" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Certificate of Achievement: GDG Solution Challenge</h3>
+
+      <p class="blog-text">
+        🎓 Proud to receive a Certificate of Achievement in the GDG on Campus Solution Challenge, powered by Hack2skill! Gained invaluable experience leveraging technology to solve pressing, real-world problems while collaborating, iterating, and growing alongside an incredible community of forward-thinking developers. #SolutionChallenge #GDGOnCampus
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068675127970349343?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Luxe Scent Sanctuary deck cover or conceptual design image -->
+      <img src="./assets/images/blog-86.jpeg" alt="L'Oréal Brandstorm 2026 Luxe Scent Sanctuary Concept" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Innovating at L'Oréal Brandstorm 2026</h3>
+
+      <p class="blog-text">
+        ✨ Proud to participate in L'Oréal Brandstorm 2026! Developed "LUXE SCENT SANCTUARY," a forward-thinking concept that seamlessly converges generative AI pipelines, personalized data-driven fragrance experiences, immersive hardware wellness pods, and eco-conscious sustainability to completely reimagine the future of luxury beauty tech.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068674037577064908?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Vision Possible event graphic or certificate -->
+      <img src="./assets/images/blog-85.jpeg" alt="Vision Possible Agent Protocol 2026 Participation" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Participated in Vision Possible: Agent Protocol 2026</h3>
+
+      <p class="blog-text">
+        🤖 Successfully participated in Vision Possible: Agent Protocol 2026, an ecosystem event hosted by WeMakeDevs and VisionAgents! Deep-dived into advanced autonomous workflows, multi-agent protocol orchestration, and event-driven intelligent applications, building a strong foundation for future production-grade AI systems. #AIAgents #AgenticAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068673639613116482?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Create Apps Championship entry graphic or Corporate Academy UI screenshot -->
+      <img src="./assets/images/blog-84.jpeg" alt="Dubai Chamber of Digital Economy Create Apps Championship Entry" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Participated in Dubai Chamber Create Apps Championship</h3>
+
+      <p class="blog-text">
+        🌍 Proud to participate in the prestigious Create Apps Championship 2025–26 hosted by the Dubai Chamber of Digital Economy! Engineered Corporate Academy—an intelligent, AI-driven corporate upskilling and career development architecture designed to optimize employee training pipelines and maximize personalized learning paths. [Video Demo: https://youtube.com/watch?v=my-WkHrnJyg]
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068672226279428557?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your SEBI Hackathon shortlisting status or MarketSafe UI graphic -->
+      <img src="./assets/images/blog-83.jpeg" alt="SEBI Securities Market Hackathon Round 2 Shortlist" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Shortlisted for Round 2 at SEBI Hackathon 2025</h3>
+
+      <p class="blog-text">
+        ⚖️ Proud to share that MarketSafe has been shortlisted for Round 2 of the SEBI Securities Market Hackathon 2025 at the Global Fintech Fest! Engineered an AI-driven platform built to protect retail investors by actively detecting financial scams, verifying corporate legitimacy, and compiling instant, smart summaries of fast-moving financial market news. #SEBI #GFF2025 #FinTech
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068670751679611050?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your lablab.ai certificates or hackathon architecture diagrams -->
+      <img src="./assets/images/blog-82.jpeg" alt="Double lablab.ai Agentic AI Hackathons Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Double lablab.ai Agentic AI Hackathons</h3>
+
+      <p class="blog-text">
+        🤖 Completed two rigorous AI hackathons back-to-back by lablabai: the Agentic AI Hackathon featuring IBM watsonx Orchestrate, and the Agentic Commerce on Arc challenge! Deeply explored autonomous multi-agent orchestration, intelligent workflows, Gemini AI architectures, and high-speed Groq inference deployment to build next-generation automation frameworks. #AgenticAI #IBMwatsonx
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068669111073452344?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your lablab.ai certificate or FutureTwin AI dashboard mock-up -->
+      <img src="./assets/images/blog-81.jpeg" alt="Complete AI Hackathon FutureTwin AI Project" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Built FutureTwin AI for lablab.ai Complete AI Hackathon</h3>
+
+      <p class="blog-text">
+        🧠 Completed the Complete AI Hackathon by lablabai and built FutureTwin AI! Developed an advanced multi-agent AI framework designed to simulate long-term future outcomes, evaluate risk parameters, and provide predictive intelligence to help users navigate complex career, education, and venture scaling decisions. #AgenticAI #AIHackathon #FutureTwinAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068658549815975948?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Naavik AI dashboard or Hack2skill event screenshot -->
+      <img src="./assets/images/blog-80.jpeg" alt="Google Cloud Agentic AI Day Naavik AI Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Built Naavik AI for Google Cloud Agentic AI Day</h3>
+
+      <p class="blog-text">
+        🚨 Participated in Google Cloud Agentic AI Day powered by Hack2skill! Engineered Naavik AI (CoreResQ)—an intelligent, AI-powered emergency response ecosystem featuring autonomous agentic SOS assistance, predictive risk-zone detection, automated family coordination channels, and dynamic real-time hazard alerts. #AgenticAI #GoogleCloud #TechForGood
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068657292518752364?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your SuperHack 2025 submission slide or project architecture dashboard -->
+      <img src="./assets/images/blog-79.jpeg" alt="SuperHack 2025 PeerPulse Project Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Built PeerPulse for SuperHack 2025 by SuperOps & AWS</h3>
+
+      <p class="blog-text">
+        🛠️ Participated in SuperHack 2025 by SuperOps, AWS, and Hack2skill! Engineered PeerPulse—a decentralized IT support ecosystem that leverages Agentic AI for automated, intelligent ticket routing alongside Blockchain technology to ensure transparent, verified contributions and incentivize community-driven problem solving. #SuperHack2025 #AgenticAI #AWS #Blockchain
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068656463359422676?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Gen AI Academy 2.0 Security Track certificate badge -->
+      <img src="./assets/images/blog-78.jpeg" alt="Google Cloud Gen AI Academy 2.0 Security Track Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Security Learning Track – Gen AI Academy 2.0</h3>
+
+      <p class="blog-text">
+        🔒 Completed the Security Learning Track of Gen AI Academy 2.0 by Google Cloud! Gained practical, hands-on experience architectural hardening using the Cloud DLP API for data protection, configuring secure Cloud Storage environments, managing complex IAM access controls, and implementing rigorous data governance protocols for enterprise AI pipelines. #GoogleCloud #GenAI #CloudSecurity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068655803549327729?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Gen AI Exchange certificate or Cementra architecture diagram -->
+      <img src="./assets/images/blog-77.jpeg" alt="Gen AI Exchange Hackathon Cementra Project Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-22">22 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Built Cementra for Google Cloud's Gen AI Exchange Hackathon</h3>
+
+      <p class="blog-text">
+        🏭 Participated in the Gen AI Exchange Hackathon 2025 by Google Cloud and built Cementra—an AI-powered application optimized for cement plant operations. The platform leverages advanced Generative AI architectures to streamline real-time industrial monitoring, safety compliance auditing, predictive scheduling, and enterprise operational efficiency. #GoogleCloud #GenAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068654761608659359?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Kiro Heroes certificate or PeerAI HelpHub interface screenshot -->
+      <img src="./assets/images/blog-76.jpeg" alt="Kiro Heroes Weekly Challenge Certificate of Recognition" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-22">22 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Recognized in Kiro Heroes Challenge for PeerAI HelpHub</h3>
+
+      <p class="blog-text">
+        🏆 Received a Certificate of Recognition in the Kiro Heroes Weekly Challenge! Engineered PeerAI HelpHub—an AI-powered peer learning and academic support platform designed to streamline collaborative problem-solving, real-time knowledge sharing, and smart community mentoring. #KiroHeroes #AIForBharat
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068653139721642327?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your hackathon project slide, dashboard screenshot, or participation certificate -->
+      <img src="./assets/images/blog-75.jpeg" alt="Bharatiya Antariksh Hackathon MOSDAC Chatbot Project" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-22">22 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Built MOSDAC Chatbot for Bharatiya Antariksh Hackathon</h3>
+
+      <p class="blog-text">
+        🚀 Participated in the Bharatiya Antariksh Hackathon 2025 and built an intelligent MOSDAC Chatbot designed to simplify public and research access to complex satellite and meteorological data using AI models. Grateful for the incredible opportunity to explore space-tech data structures and contribute to localized scientific accessibility. #ISRO #MOSDAC #BharatiyaAntariksh
+      </p>
+
+    </div>
+  </a>
+</li>
+<li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068651213063938345?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your GFG 160 completion certificate or streak badge -->
+      <img src="./assets/images/blog-74.jpeg" alt="GeeksforGeeks GFG 160 Challenge Completion Certificate" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Coding</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-21">21 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed GFG 160: 160 Days of Problem Solving</h3>
+
+      <p class="blog-text">
+        💻 Successfully completed the GFG 160 – 160 Days of Problem Solving challenge by GeeksforGeeks! Dedicated 22 weeks to relentless learning, advanced DSA practice, and rigorous daily coding challenges that significantly sharpened my algorithmic execution and core technical problem-solving skills. #GeeksforGeeks #GFG160 #DSA
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068649004096000084?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with a collage or a banner representing your hackathon journey -->
+      <img src="./assets/images/blog-73.png" alt="Hackathons and Innovation Challenges Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-22">22 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Multi-Hackathon and Innovation Challenge Showcase</h3>
+
+      <p class="blog-text">
+        🚀 Participated in multiple cutting-edge hackathons and global innovation challenges, including the AI Agent Hackathon, Code For Bharat Season 2, Byte Quest – AI Vibe Coding Challenge 2026, and the L'Oréal Sustainability Challenge 2025. An intense, rewarding journey of rapid prototyping, cross-functional collaboration, and building future-ready tech solutions.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068648148806037819?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your IBM / CognitiveClass certificates -->
+      <img src="./assets/images/blog-72.jpeg" alt="IBM Cloud and Docker Essentials Certifications" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-22">22 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned IBM Cloud &amp; Docker Essentials Certifications</h3>
+
+      <p class="blog-text">
+        🐳 Successfully completed two IBM certifications through CognitiveClass.ai: "Introduction to Cloud" and "Docker Essentials: A Developer Introduction." Gained valuable, hands-on knowledge in cloud architecture, containerization mechanics, image deployment, and cloud-native development practices. #IBM #Docker #Cloud
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068468065759871053?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Saint Louis University / Excelerate certificate -->
+      <img src="./assets/images/blog-71.png" alt="Career Essentials Course Completion Certificate" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-21">21 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Career Essentials Professional Course</h3>
+
+      <p class="blog-text">
+        💼 Successfully completed the "Career Essentials: Getting Started with Your Professional Journey" course by Saint Louis University and Excelerate! Gained valuable insights into strategic professional growth, career readiness, and building a strong foundation for future corporate opportunities.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068467639970902166?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your FlutterFlow app screenshot or Buildathon certificate -->
+      <img src="./assets/images/blog-70.jpeg" alt="DreamFlow Buildathon 2025 Application Launch" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-21">21 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Launched Live App at DreamFlow Buildathon 2025</h3>
+
+      <p class="blog-text">
+        📱 Successfully built and launched an application during DreamFlow Buildathon 2025 powered by FlutterFlow! A great opportunity to turn rapid ideas into reality, master low-code/no-code acceleration, and ship a functional product in a competitive environment. #DreamFlow #FlutterFlow #Buildathon
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068467186713464934?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Cardano Hackathon shortlisting graphic or project logo -->
+      <img src="./assets/images/blog-69.jpeg" alt="Cardano Hackathon Asia 2025 Top 112 Shortlist" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Shortlisted in Top 112 at Cardano Hackathon Asia 2025</h3>
+
+      <p class="blog-text">
+        🌐 Proud to share that our team has been shortlisted among the Top 112 Teams in the Cardano Hackathon Asia 2025 (IBW Edition)! We built Health Bridge Agent—an AI + Web3 platform for community health monitoring and transparent healthcare insights. #Cardano #WEB3
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068466294752678208?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your MumbaiHacks 2025 submission photo, team shot, or certificate -->
+      <img src="./assets/images/blog-68.jpeg" alt="MumbaiHacks 2025 Agentic AI Hackathon" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Participated in MumbaiHacks 2025 Agentic AI Hackathon</h3>
+
+      <p class="blog-text">
+        🤖 Participated in MumbaiHacks 2025, one of the largest Agentic AI Hackathons! An amazing opportunity to build, learn, collaborate, and explore the future of autonomous AI agents with an incredible community of innovators. #MumbaiHacks #AgenticAI
+      </p>
+
+    </div>
+  </a>
+</li>
 
             <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1934327345831436579">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-30.png" alt="LeetCode 100 Days Badge 2025!" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Academic</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2025-06-16">16 June, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">LeetCode 100 Days Badge 2025</h3>
-  
-                  <p class="blog-text">
-                    🚀 Just unlocked the LeetCode 100 Days Badge 2025!
-                    Consistent grind. Daily dedication. 100+ days of solving problems, growing stronger each step. 💻🔥
-                    Onwards to more challenges and milestones!</div>
-              </a>
+  <a href="https://x.com/I_m_Samarth004/status/2068465461306835119?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your HackOdisha 5.0 certificate or project presentation screenshot -->
+      <img src="./assets/images/blog-67.jpeg" alt="HackOdisha 5.0 Verbwire Track Prize Winner" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Won Verbwire Track Prize at HackOdisha 5.0</h3>
+
+      <p class="blog-text">
+        🏆 Excited to share that my project ProofOfImpact won the Verbwire Track Prize at HackOdisha 5.0! An amazing experience of rapid prototyping, learning, and collaborating with a highly competitive field of developers. #HackOdisha5 #Verbwire
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068464501113200774?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Open Source Connect Global 2026 contributor badge or graphic -->
+      <img src="./assets/images/blog-66.jpeg" alt="Open Source Connect Global 2026 Contributor" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Recognized as Contributor at Open Source Connect Global 2026</h3>
+
+      <p class="blog-text">
+        🚀 Proud to be recognized as a Contributor at Open Source Connect Global 2026! Grateful for the opportunity to contribute to open-source projects, collaborate with amazing developers globally, and grow through impactful, community-driven innovation. #OpenSource #OSCG2026 #Developer
+      </p>
+
+    </div>
+  </a>
+</li>
 
             <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1922617721704853965">
+  <a href="https://x.com/I_m_Samarth004/status/2068463938086556023?s=20" target="_blank" rel="noopener noreferrer">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-29.jpg" alt="Green Skills and Artificial Intelligence foundation course" loading="lazy">
-                </figure>
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Microsoft Cybersecurity Architect (SC-100) badge graphic -->
+      <img src="./assets/images/blog-65.jpeg" alt="Microsoft Cybersecurity Architect (SC-100)" loading="lazy">
+    </figure>
 
-                <div class="blog-content">
+    <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Cource Completed</p>
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
 
-                    <span class="dot"></span>
+        <span class="dot"></span>
 
-                    <time datetime="2024-02-15">15 Feb, 2025</time>
-                  </div>
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
 
-                  <h3 class="h3 blog-item-title">Green Skills and Artificial Intelligence foundation course</h3>
+      <h3 class="h3 blog-item-title">Passed Microsoft Cybersecurity Architect (SC-100)</h3>
 
-                  <p class="blog-text">
-                   🌱 Proud to complete the Green Skills and Artificial Intelligence foundation course under the Skills4Future Program at Sinhgad College of Engineering, supported by AICTE, Shell India, and Edunet Foundation! 💡🌍
+      <p class="blog-text">
+        🎓 Passed the Microsoft Cybersecurity Architect (SC-100) certification exam! Strengthening my skills in Zero Trust architecture, cross-cloud security strategies, identity management, threat protection, and robust enterprise security operations. #SC100 #Cybersecurity
+      </p>
 
-                    Excited to build tech for a sustainable tomorrow!</div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.linkedin.com/posts/samarth-shendre-b3b039297_hackathonwinner-llmandrag-pathwayai-activity-7327757585082683392-6oMN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEe65h8Bz67UGE7fHsvtgZkXAhf7uP1jvKw">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-28.jpg" alt="Winner at National Hackathon Bits Goa" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Hackathon Result</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2025-01-31">31 Jan, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">Winner at National Hackathon Bits Goa </h3>
-  
-                  <p class="blog-text">
-                    Proud to share that our Real-Time RAG Application was recognized among the Top 3 Open Source Projects at the LLM and RAG Hackathon hosted at BITS Goa, conducted by Pathway AI! 🧠⚡
-
-                    Built with a focus on retrieval-augmented generation and real-time analytics!</div>
-              </a>
-            </li>
+    </div>
+  </a>
+</li>
 
             <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1922614922627715361">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-27.png" alt="Top 5,000 out of 25,000+ teams" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Project Competition</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2025-05-23">23 May, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">Top 5,000 out of 25,000+ teams</h3>
-  
-                  <p class="blog-text">
-                    🏆 Thrilled to be among the Top 5,000 out of 25,000+ teams in the Build with India Hackathon by 
-                      @hackwithindia
-                        !🌟 Grateful for the journey
-                      Every line of code, every sleepless night—totally worth it!</div>
-              </a>
-            </li>
+  <a href="https://x.com/I_m_Samarth004/status/2068463550935531791?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Azure Data Scientist Associate (DP-100) badge graphic -->
+      <img src="./assets/images/blog-64.jpeg" alt="Microsoft Certified: Azure Data Scientist Associate (DP-100)" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Azure Data Scientist Associate (DP-100)</h3>
+
+      <p class="blog-text">
+        🎓 Earned the Microsoft Certified: Azure Data Scientist Associate (DP-100) certification! Strengthening my expertise in designing and implementing data science solutions, training and deploying Machine Learning models, and operationalizing enterprise real-world AI applications on Azure.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068462284410913217?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Microsoft Certified: Azure Fundamentals (AZ-900) badge graphic -->
+      <img src="./assets/images/blog-63.jpeg" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+
+      <p class="blog-text">
+        🎓 Earned the Microsoft Certified: Azure Fundamentals (AZ-900) certification! Strengthening my core knowledge in cloud architecture, essential Azure services, cloud security compliance, and organizational governance structures. #Azure #AZ900 #MicrosoftCertified #CloudComputing
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068461542283358362?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Oracle Cloud Database Services 2025 Certified Professional badge graphic -->
+      <img src="./assets/images/blog-62.jpeg" alt="Oracle Cloud Database Services 2025 Certified Professional" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Oracle Cloud Database Services 2025 Certified Professional</h3>
+
+      <p class="blog-text">
+        🎓 Earned the Oracle Cloud Database Services 2025 Certified Professional certification! Strengthening my skills in enterprise cloud databases, data management strategy, advanced cloud security, and scalable infrastructure design on Oracle Cloud. #OracleCloud #OCI #OracleDatabase
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068461092406460771?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Oracle Cloud Infrastructure Certified Generative AI Professional badge graphic -->
+      <img src="./assets/images/blog-61.jpeg" alt="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned OCI 2025 Certified Generative AI Professional</h3>
+
+      <p class="blog-text">
+        🎓 Earned the Oracle Cloud Infrastructure 2025 Certified Generative AI Professional certification! Advancing my skills in building enterprise Generative AI workflows, fine-tuning LLMs, and deploying cloud-native AI solutions on Oracle Cloud. #OracleCloud #OCI #GenerativeAI #AI #LLM
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068460224944676984?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Oracle Cloud Infrastructure Certified Data Science Professional badge graphic -->
+      <img src="./assets/images/blog-60.jpeg" alt="Oracle Cloud Infrastructure 2025 Certified Data Science Professional" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned OCI 2025 Certified Data Science Professional</h3>
+
+      <p class="blog-text">
+        🎓 Earned the Oracle Cloud Infrastructure 2025 Certified Data Science Professional certification! Strengthening my skills in production-grade Data Science pipelines, AI/ML model deployment, and cloud-powered enterprise analytics with Oracle Cloud. #OCI #DataScience #MachineLearning #AI #CloudComputing #OracleCertified
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068459246430433520?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Codefri FAANG Coding Contests completion certificates or dashboard screenshot -->
+      <img src="./assets/images/blog-59.jpeg" alt="Codefri FAANG Coding Contests Intermediate & Advanced Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Coding & DSA</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-21">21 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Codefri FAANG Coding Contests</h3>
+
+      <p class="blog-text">
+        🏆 Completed the Codefri FAANG Coding Contests across both Intermediate and Advanced levels! Another strong step forward in sharpening DSA, deep problem-solving, and competitive programming skills. #Codefri #FAANG #DSA #CompetitiveProgramming #LeetCode #CodingChallenge
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068456770637558210?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Credly Google Cloud badges or a combined showcase graphic -->
+      <img src="./assets/images/blog-58.png" alt="Google Cloud Badges - Gemini & Serverless Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned 4x Google Cloud Badges (Gemini & Serverless)</h3>
+
+      <p class="blog-text">
+        ☁️ Added 4 new Google Cloud badges to the collection! Leveling up my cloud development and serverless workflows with Gemini Code Assist, Cloud Run Functions, Gemini on Google Cloud, and Apigee X. #GoogleCloud #Gemini #AI #CloudComputing
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068456392999207057?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Credly Google Cloud badges or a combined showcase graphic -->
+      <img src="./assets/images/blog-57.png" alt="Google Cloud Skill Badges Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned 4x More Google Cloud Skill Badges</h3>
+
+      <p class="blog-text">
+        ☁️ Added 4 more Google Cloud Skill Badges! Expanded my infrastructure and engineering skillset across enterprise API management with Apigee X, Cloud Storage solutions, mobile backend optimization via Firebase, and Google Cloud Networking. #GoogleCloud #Firebase #Apigee #Cloud
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068455959467606062?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Credly Google Cloud badges or a combined showcase graphic -->
+      <img src="./assets/images/blog-56.png" alt="Google Cloud Badges Showcase" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned 4x Google Cloud Learning Badges</h3>
+
+      <p class="blog-text">
+        ☁️ Added 4 more Google Cloud badges to my learning journey! Expanded my cloud native architecture and engineering skillset across Gemini CLI, Large Language Models, Google Cloud Foundations, and Cloud Functions. #GoogleCloud #AI #Gemini #CloudComputing
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068454294396031329?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Postman Student Expert Badge certificate or screenshot -->
+      <img src="./assets/images/blog-55.png" alt="Postman API Fundamentals Student Expert Badge" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Postman API Student Expert Certified</h3>
+
+      <p class="blog-text">
+        🚀 Earned the Postman API Fundamentals Student Expert Badge! Strengthening my API development, testing, and documentation skills, one endpoint at a time. #Postman #API #Developer #StudentExpert
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068451932738638194?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Gemma 4 and Hermes Agent challenge badges or technical demo screenshots -->
+      <img src="./assets/images/blog-54.jpeg" alt="Gemma 4 and Hermes Agent DEV Challenge Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Unlocked Gemma 4 & Hermes Agent Badges</h3>
+
+      <p class="blog-text">
+        🤖 New badges unlocked: Gemma 4 & Hermes Agent! Shared a deep dive into local LLM architectures, WebMCP agent-ready product cards, and a retrospective on the BuildGenAI roadmap. #GoogleAI #Gemma4 #DEVCommunity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068451237142638910?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Made for Notion & Google I/O badges or ShadowOS UI dashboard screenshot -->
+      <img src="./assets/images/blog-53.jpeg" alt="Made for Notion and Google I/O DEV Challenge Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Made for Notion & Google I/O Badges</h3>
+
+      <p class="blog-text">
+        🛠️ New badges unlocked: Made for Notion & Google I/O! Documented ShadowOS (an invisible AI operating system for workflows) and Hermes Agent (an AI-Ops engine deployed in the wild). #GoogleIO #Notion #AI #DEVCommunity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068450762389405727?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your WeCoded and Weekend Challenge badges or project interface screenshot -->
+      <img src="./assets/images/blog-52.jpeg" alt="WeCoded and Weekend Challenge DEV Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Unlocked WeCoded & Weekend Challenge Badges</h3>
+
+      <p class="blog-text">
+        💻 New badges unlocked: WeCoded & Weekend Challenge! Shipped SinhgadHack Swarm AI (a teammate matcher for student hackathons) and shared a personal reflection on engineering culture. #DEVCommunity #AI #BuildInPublic
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068449837318902132?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Google AI and Algolia challenge badges or portfolio/agent UI screenshot -->
+      <img src="./assets/images/blog-51.jpeg" alt="Google AI and Algolia DEV Challenge Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Google AI & Algolia Badges</h3>
+
+      <p class="blog-text">
+        🧠 New badges unlocked: Google AI & Algolia! Shipped the New Year Portfolio Challenge alongside the Hackathon Synergy Agent build. #GoogleAI #Algolia #DEVCommunity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068449427367645494?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your UNO Platform & Mux badges or project UI dashboard screenshot -->
+      <img src="./assets/images/blog-50.jpeg" alt="UNO Platform and Mux DEV Challenge Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Unlocked UNO Platform & Mux Badges</h3>
+
+      <p class="blog-text">
+        ✨ New badges unlocked: UNO Platform & Mux! Shipped LifeHub AI for cross-platform app design and KissanConnect for smart, data-driven agriculture. #DEVCommunity #UNOPlatform #Mux #BuildInPublic
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068448598485016738?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your DEV Challenge badges or project interface screenshot -->
+      <img src="./assets/images/blog-49.jpeg" alt="Google AI and KendoReact DEV Challenge Badges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned Google AI & KendoReact Challenge Badges</h3>
+
+      <p class="blog-text">
+        🚀 Earned the Google AI & KendoReact Challenge Badges on DEV! Built Troubleshooter AI and Nexus Graph with KendoReact. Building, learning, and sharing. #GoogleAI #KendoReact #DEVCommunity
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068446098742767906?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your AWS Certified AI Practitioner digital badge or certificate screenshot -->
+      <img src="./assets/images/blog-48.png" alt="AWS Certified AI Practitioner Certification Badge" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Milestone Unlocked: AWS Certified AI Practitioner</h3>
+
+      <p class="blog-text">
+        ☁️ Milestone Unlocked: AWS Certified AI Practitioner. A great learning journey covering AI/ML fundamentals, Generative AI, Foundation Models, Responsible AI, and AI Security. Grateful for the opportunity to learn, grow, and stay ahead in the rapidly evolving AI landscape. #AWS
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068444948844912972?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Hacktoberfest completion profile or Supercontributor badge screenshot -->
+      <img src="./assets/images/blog-47.jpeg" alt="Hacktoberfest 2025 Completion and Supercontributor Badge" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Hacktoberfest 2025 as a Supercontributor</h3>
+
+      <p class="blog-text">
+        🎃 Hacktoberfest 2025 Complete! 6 accepted PRs 🏆 Supercontributor Badge 🌳 1 Tree Planted. Open source, learning, and giving back to the community. #Hacktoberfest #OpenSource #GitHub
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068443917717307409?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your LeetCode 365-day badge or streak screenshot -->
+      <img src="./assets/images/blog-46.jpeg" alt="LeetCode 365 Days Coding Consistency Badge" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">365 Days of Coding Consistency on LeetCode</h3>
+
+      <p class="blog-text">
+        🚀 365 days of coding consistency! From 50 → 100 → 200 → 365 days. Small daily efforts compound into big achievements. #LeetCode #DSA #CodingJourney
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068443047550226943?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Snowflake training completion badge or certificate screenshot -->
+      <img src="./assets/images/blog-45.jpeg" alt="Snowflake Platform Training Completion Certificate" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Snowflake Platform Training</h3>
+
+      <p class="blog-text">
+        ❄️ Another milestone unlocked! Completed Snowflake Platform Training and gained valuable insights into the Snowflake ecosystem. #Snowflake #LearningJourney #techlife
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2068441492742717498?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Duolingo milestone badge or streak screenshot -->
+      <img src="./assets/images/blog-44.jpeg" alt="500 Days Duolingo Japanese Streak Milestone" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Milestones</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-06-23">23 Jun, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">500-Day Duolingo Streak in Japanese</h3>
+
+      <p class="blog-text">
+        🔥 500 days and counting! Proud to maintain my Duolingo streak and be among the Top 9% of Japanese learners worldwide. 日本語学習の旅は続く。 The Japanese learning journey continues.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/2014080996480868840?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with a screenshot of your live YouWare deployment or integration layout -->
+      <img src="./assets/images/blog-43.jpeg" alt="YouBase Integration on YouWare Live Deployment" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Projects</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2026-01-15">15 Jan, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Shipped Live App Using YouBase Integration on YouWare</h3>
+
+      <p class="blog-text">
+        ⚡ I've been playing with the new YouBase integration on YouWare — it's a game-changer for backend work. Just shipped this: https://1gggzy6w8h.youware.app #YouBase @YouWareAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1965914485610393736?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Green Guardian architecture or dashboard graphic -->
+      <img src="./assets/images/blog-42.jpeg" alt="Green Guardian AI-Powered Microservice Energy Auditor" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Projects</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Green Guardian — AI-Powered Microservice Energy Auditor</h3>
+
+      <p class="blog-text">
+        🌱 Excited to introduce Green Guardian — an AI-powered microservice energy auditor & optimizer that transforms cloud apps into eco-friendly, sustainable operations! Continuously monitors & predicts energy use per microservice to reduce carbon footprint on #GKE & Anthos.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1965166191049408846?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your VoyageVector project or hackathon registration graphic -->
+      <img src="./assets/images/blog-41.jpeg" alt="VoyageVector Project Hackathon Registration" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Registered for MariaDB Python Hackathon with VoyageVector</h3>
+
+      <p class="blog-text">
+        🚢 Signed up for the #mariadb #python #hackathon with my idea VoyageVector
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1951756667772702881?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your DECC project architecture, demo, or graphic -->
+      <img src="./assets/images/blog-40.jpeg" alt="DECC — Dynamic Enterprise Compliance Copilot Project" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Projects</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">DECC — Dynamic Enterprise Compliance Copilot</h3>
+
+      <p class="blog-text">
+        🤖 Meet DECC — the Dynamic Enterprise Compliance Copilot! An AI agent that automatically tracks changing regulations and updates your claims workflows in real time. Stay compliant, reduce risk, and get audit-ready — all without lifting a finger. #AgenticAI #Compliance #InyaAI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1949592987337424983?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Cisco Cybersecurity certificate graphic -->
+      <img src="./assets/images/blog-39.jpeg" alt="Cisco Networking Academy Introduction to Cybersecurity Course Completion" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2024-07-02">2 Jul, 2024</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Introduction to Cybersecurity by Cisco</h3>
+
+      <p class="blog-text">
+        🔒 Just completed the Introduction to Cybersecurity course by @CiscoNetAcad! Explored global cyber threats, vulnerabilities, and Cisco’s strategies for detection and defense. Completed on: 2nd July 2024 Looking forward to diving deeper into the world of cybersecurity!
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1949589263613591941?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Samsung Solve for Tomorrow submission or certificate graphic -->
+      <img src="./assets/images/blog-38.jpeg" alt="Samsung Solve for Tomorrow 2025 Participation" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathons</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Participated in Samsung Solve for Tomorrow 2025</h3>
+
+      <p class="blog-text">
+        🚀 Participated in Samsung Solve for Tomorrow 2025! Grateful to contribute towards building innovative, real-world solutions using Design Thinking principles. Every step forward counts toward a better tomorrow. Thank you @SamsungIndia for the opportunity!
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1949588272814141741?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your GeeksforGeeks Campus Mantri poster or photo -->
+      <img src="./assets/images/blog-37.jpeg" alt="GeeksforGeeks Campus Mantri at SCOE Pune" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Leadership</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Selected as GeeksforGeeks Campus Mantri (SCOE Pune)</h3>
+
+      <p class="blog-text">
+        🎓 Honored to be selected once again as the Campus Mantri for @geeksforgeeks at SCOE Pune! From organizing events to building a coding community, it’s been an amazing journey—and I’m excited to take it to the next level this year too! Let’s make 2025 even bigger for Tech.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1949587547429974191?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your ExcelR DSA completion certificate or graphic -->
+      <img src="./assets/images/blog-36.jpeg" alt="Data Structures & Algorithms Course Completion with ExcelR" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certifications</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Data Structures & Algorithms Course</h3>
+
+      <p class="blog-text">
+        🎓 Just completed the Data Structures & Algorithms course with ExcelR! Strengthened my problem-solving skills and deepened my DSA fundamentals. Excited to apply this knowledge in upcoming projects & interviews! #DSA #ExcelR #CodingSkills #TechLearning #DataStructures
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1949586747928482161?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your OSCI contribution certificate or graphic -->
+      <img src="./assets/images/blog-35.jpeg" alt="Open Source Connect India Contributor Milestone" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Open Source</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-08-15">15 Aug, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Contributor at Open Source Connect India</h3>
+
+      <p class="blog-text">
+        🌐 Thrilled to be a Contributor at Open Source Connect India Honored to support open innovation and collaborative development! 15th - 30th August 2025 Let’s build, learn, and grow together with @NexFellow Scan & join: http://osconnect.org #OpenSource #OSCI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1947056977257066964?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your video thumbnail or Paywall by Samarth graphic -->
+      <img src="./assets/images/blog-34.jpeg" alt="Paywall by Samarth - RevenueCat Video Breakdown" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Video Content</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-07-20">20 Jul, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Paywall by Samarth: Beautiful Paywalls with RevenueCat</h3>
+
+      <p class="blog-text">
+        📱 Struggling with in-app subscriptions? What if you could design beautiful paywalls without writing a single line of UI code? I'm sharing my "Paywall by Samarth" journey & showing you exactly how I did it using RevenueCat in my latest video!
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1934327345831436579?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your LeetCode 100 Days Badge graphic -->
+      <img src="./assets/images/blog-33.jpeg" alt="LeetCode 100 Days Badge 2025 Achievement" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Coding Milestone</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-06-15">15 Jun, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Unlocked LeetCode 100 Days Badge 2025</h3>
+
+      <p class="blog-text">
+        🚀 Just unlocked the LeetCode 100 Days Badge 2025! Consistent grind. Daily dedication. 100+ days of solving problems, growing stronger each step. Onwards to more challenges and milestones! #LeetCode #100DaysOfCode #CodingJourney #DeveloperMilestone #Samarth28
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922621306467422526?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your corporate challenges graphic -->
+      <img src="./assets/images/blog-32.png" alt="Flipkart GRiD, Tata Crucible, HPCL, and L'Oréal Corporate Challenges" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Corporate Challenges</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Beyond Coding: Tech Quizzes & Corporate Challenges</h3>
+
+      <p class="blog-text">
+        💼 Beyond coding: My journey through tech quizzes and corporate challenges! Proud to have participated in @Flipkart GRiD's E-Commerce Tech Quiz, @TataCompanies Crucible Campus Quiz 2024, @HPCL's Power Lab assessment, and @LOrealIndia's Sustainability Challenge.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922619254198665459?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Unstop Treasure Hunt challenge graphic -->
+      <img src="./assets/images/blog-31.png" alt="Unstop Treasure Hunt Monthly Challenges Achievement" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Competition</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Unstop Treasure Hunt Monthly Challenges</h3>
+
+      <p class="blog-text">
+        🧩 Successfully completed the Treasure Hunt Monthly Challenges (Feb, Mar, Apr) organized by @unstopcareers! Each month brought new puzzles, sharp thinking, and lots of fun! Grateful for the experience and brain-boosting journey! #Unstop #TreasureHunt
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922617721704853965?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Skills4Future certification graphic -->
+      <img src="./assets/images/blog-30.jpeg" alt="Green Skills and Artificial Intelligence Certification" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certification</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Completed Green Skills and AI Foundation Course</h3>
+
+      <p class="blog-text">
+        🌱 Proud to complete the Green Skills and Artificial Intelligence foundation course under the Skills4Future Program at Sinhgad College of Engineering, supported by AICTE, Shell India, and Edunet Foundation! Excited to build tech for a sustainable tomorrow! #AI
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922617200919159167?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your BITS Goa Hackathon achievement graphic -->
+      <img src="./assets/images/blog-29.jpeg" alt="Top 3 Open Source Project - BITS Goa Hackathon" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathon Success</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Top 3 Open Source Project at BITS Goa LLM & RAG Hackathon</h3>
+
+      <p class="blog-text">
+        🏆 Proud to share that our Real-Time RAG Application was recognized among the Top 3 Open Source Projects at the LLM and RAG Hackathon hosted at BITS Goa, conducted by Pathway AI! Built with a focus on retrieval-augmented generation and real-time analytics! #LLM #RAG
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922613745773150213?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <img src="./assets/images/blog-28.png" alt="Gesture Controlled Gaming - Temple Run and Angry Birds" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Project Showcase</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Gesture-Controlled Gaming: Temple Run & Angry Birds</h3>
+
+      <p class="blog-text">
+        🎮 Riding the wave of gesture-controlled gaming with a twist! After seeing Subway Surfer with Hand Gestures go viral, I took it a step further. Now playing Temple Run & Angry Birds using just my hands! Built using Python, OpenCV, and MediaPipe. No keyboard, no mouse.
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922612345286602863?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your LeetCode badge graphic -->
+      <img src="./assets/images/blog-27.jpeg" alt="LeetCode 50 Days Badge 2025 Achievement" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Achievement</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Unlocked LeetCode 50 Days Badge 2025</h3>
+
+      <p class="blog-text">
+        🔥 Just unlocked the 50 Days Badge 2025 on LeetCode! Grateful for the consistency and learning along the way. The grind doesn’t stop—already pushing beyond this milestone with more problems solved daily! 🚀
+      </p>
+
+    </div>
+  </a>
+</li>
+<li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922610886700646427?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your Hackhzards/Mindful Moment graphic -->
+      <img src="./assets/images/blog-26.jpeg" alt="Hackhzards 2025 - Mindful Moment Project" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathon Participation</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-05-14">14 May, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Participated in Hackhzards 2025 – Mindful Moment</h3>
+
+      <p class="blog-text">
+        🧠 Participated in Hackhzards 2025 by The Namespace Community as a Hacker! Developed Mindful Moment, a wellness app focused on reducing stress through mindfulness & breathing techniques. Waiting for the results! Fingers crossed! 🤞✨
+      </p>
+
+    </div>
+  </a>
+</li>
+            <li class="blog-post-item">
+  <a href="https://x.com/I_m_Samarth004/status/1922609840716677486?s=20" target="_blank" rel="noopener noreferrer">
+
+    <figure class="blog-banner-box">
+      <!-- Update this image path with your AWS badge image or placeholder -->
+      <img src="./assets/images/blog-25.png" alt="AWS Educate Cloud Computing 101 Badge" loading="lazy">
+    </figure>
+
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Certification</p>
+
+        <span class="dot"></span>
+
+        <!-- Update the date below to match the exact day you posted it -->
+        <time datetime="2026-05-15">15 May, 2026</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">Earned AWS Educate Cloud Computing 101 Badge</h3>
+
+      <p class="blog-text">
+        ☁️ Just earned my AWS Educate Cloud Computing 101 badge! Excited to build a strong foundation in cloud technologies and explore the power of AWS.🚀
+      </p>
+
+    </div>
+  </a>
+</li>
 
             <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1922613745773150213">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-26.png" alt="Gesture Controlled Gaming" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Academic</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2025-05-14">14 May, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">Temple Run & Angry Birds using just my hands! </h3>
-  
-                  <p class="blog-text">
-                    🚀 Riding the wave of gesture-controlled gaming with a twist! After seeing Subway Surfer with Hand Gestures go viral, I took it a step further🎮 Now playing Temple Run & Angry Birds using just my hands! 🖐️
-                    📌 Built using Python, OpenCV, and MediaPipe 💻
-                    No keyboard, no mouse🔥</div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1922612345286602863">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-25.jpg" alt="50 Days at LeetCode" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Academic</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2025-05-14">14 May, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">50 Days Badge 2025 on LeetCode!</h3>
-  
-                  <p class="blog-text">
-                    Grateful for the consistency and learning along the way 💻
-                    The grind doesn’t stop—already pushing beyond this milestone with more problems solved daily! </div>
-              </a>
-            </li>
+  <a href="https://x.com/I_m_Samarth004/status/1908972070312034459?s=20" target="_blank" rel="noopener noreferrer">
 
-            <li class="blog-post-item">
-              <a href="https://x.com/I_m_Samarth004/status/1908972070312034459">
-  
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-24.jpg" alt="Winner AI Agon 2k25" loading="lazy">
-                </figure>
-  
-                <div class="blog-content">
-  
-                  <div class="blog-meta">
-                    <p class="blog-category">Project Competition</p>
-  
-                    <span class="dot"></span>
-  
-                    <time datetime="2024-12-22">03 April, 2025</time>
-                  </div>
-  
-                  <h3 class="h3 blog-item-title">Winner AI Agon 2k25 - Health Care Domain</h3>
-  
-                  <p class="blog-text">
-                    Our healthcare project “Skin Scan”, a skin cancer detection app integrated with ChikitsaMitra, 🚀
+    <figure class="blog-banner-box">
+      <img src="./assets/images/blog-24.jpg" alt="AI Agon 2k25 - Skin Scan Winner" loading="lazy">
+    </figure>
 
-                    secured 1st place under the Healthcare domain at TechTonic AI Agon 2k25!💡✨</div>
-              </a>
-            </li>
+    <div class="blog-content">
+
+      <div class="blog-meta">
+        <p class="blog-category">Hackathon Result</p>
+
+        <span class="dot"></span>
+
+        <time datetime="2025-04-06">06 Apr, 2025</time>
+      </div>
+
+      <h3 class="h3 blog-item-title">1st Place at AI Agon 2k25 - Skin Scan</h3>
+
+      <p class="blog-text">
+        🥇 We won AI Agon 2k25! Our healthcare project “Skin Scan”, a skin cancer detection app integrated with ChikitsaMitra, secured 1st place under the Healthcare domain at TechTonic AI Agon 2k25! Big thanks to my teammate Saee Bandal for the amazing collaboration.
+      </p>
+
+    </div>
+  </a>
+</li>
 
             <li class="blog-post-item">
               <a href="https://x.com/I_m_Samarth004/status/1887594496311107892">
